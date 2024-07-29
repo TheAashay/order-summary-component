@@ -2,10 +2,12 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 body {
     min-height: 100vh;
+    background-color: hsl(225, 100%, 98%);
 }
 
 main {
@@ -19,14 +21,18 @@ main {
 
 .card {
     width: 100%;
-    background-color: gray;max-width: 18.5rem;
-
+    background-color: white;
+    max-width: 18.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 2rem 2rem hsl(225, 100%, 84%);
 }
 
 img {
     width: 100%;
     height: auto;
     display: block;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
 .text-area {
@@ -35,8 +41,7 @@ img {
 
 h1 {
     text-align: center;
-    padding-top: 1.75rem;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
 }
 
 p {
@@ -48,7 +53,8 @@ p {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: hsl(225, 100%, 96%);
+    border-radius: 0.5rem;
     margin: 1.6rem 0 1rem 0;
     padding: 0.75rem;
 }
@@ -59,15 +65,45 @@ p {
 
 .plan-info {
     width: 100%;
+    margin-left: -2rem;
+}
+
+.plan-type, h1 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+
+.plan-price, p {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.change-plan {
+    font-size: 0.675rem;
+    font-weight: 700;
+}
+
+.change-plan:hover {
+    text-decoration: none;
+    color: hsl(261, 61%, 48%);
 }
 
 .payment-link {
     display: block;
     text-align: center;
     text-decoration: none;
-    background-color: white;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 2rem hsl(245, 75%, 72%);
     width: 100%;
     padding: 0.75rem 0;
+}
+
+.payment-link:hover {
+    background-color: hsl(261, 61%, 48%);
 }
 
 button {
@@ -78,4 +114,10 @@ button {
     border: 0;
     padding-top: 1.2rem;
     padding-bottom: 0.4rem;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+
+button:hover {
+    color: hsl(223, 47%, 23%);
 }
